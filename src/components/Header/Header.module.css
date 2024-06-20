@@ -1,0 +1,17 @@
+.titleContainer {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    margin-right: 30px;
+}
