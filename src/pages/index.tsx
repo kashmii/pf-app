@@ -1,5 +1,6 @@
-import React from 'react';
-import Layout from '../components/Layout';
+import React from "react";
+import Layout from "../components/Layout";
+import { Profile } from "../components/Profile/Profile";
 import { projects } from "@/data/projects";
 import { ProjectTable } from "@/components/ProjectTable/ProjectTable";
 
@@ -10,11 +11,12 @@ const Home: React.FC = () => {
         <h2>Projects</h2>
         <div className="tableContainer">
           <ProjectTable projects={projects} />
-          <div className='buttonContainer'>
+          <div className="buttonContainer">
             <button className="projectButton">もっと見る</button>
           </div>
         </div>
         <h2>profile</h2>
+        <Profile />
       </section>
     </Layout>
   );
