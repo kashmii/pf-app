@@ -1,3 +1,8 @@
+.header {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
 .titleContainer {
     height: 180px;
     display: flex;
@@ -13,5 +18,4 @@
     display: flex;
     justify-content: flex-end;
     gap: 1em;
-    margin-right: 30px;
 }
