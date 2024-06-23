@@ -3,10 +3,13 @@ import { formatDate } from '@/utils/format';
 import s from "./ProjectTable.module.css";
 
 export const ProjectTable: React.FC<{ projects: Project[] }> = ({ projects }) => {
+  // TODO: project数が増えたらここを3にする
+  const showingProjects = projects.slice(0, 2);
+
   return (
     <table className={s.table}>
       <tbody>
-        {projects.map((project, index) => (
+        {showingProjects.map((project, index) => (
           <tr key={index}>
             <td  className={s.td}>
               <h3>
