@@ -1,0 +1,46 @@
+.outerContainer {
+  margin-top: 60px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profileImage {
+  width: 40%;
+  text-align: center;
+
+  & > img {
+    border-radius: 50%;
+    border: 2px solid #ccc;
+  }
+}
+
+.profileContent {
+  width: 60%;
+
+  & > h3 {
+    margin-left: 20px;
+  }
+}
+
+.detail {
+  text-align: center;
+}
+
+.language {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.snsIcons {
+  display: flex;
+  gap: 1em;
+  margin-top: 30px;
+
+  & > a:first-child {
+    margin-left: auto;
+  }
+}

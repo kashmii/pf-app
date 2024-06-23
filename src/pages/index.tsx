@@ -15,7 +15,6 @@ const Home: React.FC = () => {
             <button className="projectButton">もっと見る</button>
           </div>
         </div>
-        <h2>profile</h2>
         <Profile />
       </section>
     </Layout>
