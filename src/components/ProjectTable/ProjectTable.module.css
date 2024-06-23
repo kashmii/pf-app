@@ -1,0 +1,21 @@
+.table {
+  width: 100%;
+  border: normal;
+}
+
+.td {
+  padding: 10px 0;
+}
+
+.detailLine {
+  display: flex;
+  margin-top: 10px;
+
+  & > span {
+    width: 50%;
+  }
+}
+
+.projectDate {
+  float: right;
+}
