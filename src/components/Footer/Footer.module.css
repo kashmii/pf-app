@@ -1,5 +1,18 @@
+.footer {
+  background-color: #eee;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100px;
+}
+
 .social {
-    display: flex;
-    gap: 1em;
-    list-style: none;
+  display: flex;
+  gap: 1em;
+  list-style: none;
 }
