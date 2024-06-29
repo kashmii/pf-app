@@ -44,3 +44,8 @@
     margin-left: auto;
   }
 }
+
+.grayText {
+  font-size: 14px;
+  color: #4b4b4b;
+}

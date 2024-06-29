@@ -1,6 +1,6 @@
 import { Project } from "@/types/project";
 import { formatDate } from "@/utils/format";
-import { GITHUB_URL, TWITTER_URL } from "@/utils/constants";
+import { githubAccountUrl, twitterUrl } from "@/utils/constants";
 import Image from "next/image";
 import s from "./Profile.module.css";
 
@@ -18,14 +18,14 @@ export const Profile: React.FC = () => {
           <div className={s.detail}>
             <div>
               <p>未経験・独学でSES企業に転職 3年目</p>
-              <p>転職を機に上京 関西弁が抜けません</p>
-              <p></p>
+              <p>今年中の転職目指して学習中&#x1f4aa;</p>
             </div>
             <div className={s.language}>
               <p>経験言語: Ruby, React, TypeScript, Go</p>
             </div>
+            <p className={s.grayText}>github のアカウント名は kashmii です</p>
             <div className={s.snsIcons}>
-              <a href={GITHUB_URL} className={s.icon}>
+              <a href={githubAccountUrl} className={s.icon} target="_blank">
                 <Image
                   src="/github-mark.svg"
                   alt="github"
@@ -33,7 +33,7 @@ export const Profile: React.FC = () => {
                   height={30}
                 />
               </a>
-              <a href={TWITTER_URL} className={s.icon}>
+              <a href={twitterUrl} className={s.icon} target="_blank">
                 <Image
                   src="/x-logo-black.svg"
                   alt="twitter"

@@ -1,35 +1,39 @@
 import { Project } from "@/types/project";
 import { formatDate } from "@/utils/format";
 import s from "./ProjectTable.module.css";
+import Image from "next/image";
 
 export const ProjectTable: React.FC<{ projects: Project[] }> = ({
   projects,
 }) => {
-  // TODO: project数が増えたらここを3にする
-  const showingProjects = projects.slice(0, 2);
-
   return (
     <table className={s.table}>
       <tbody>
-        {showingProjects.map((project, index) => (
+        {projects.map((project, index) => (
           <tr key={index}>
             <td className={s.td}>
               <h3>{project.name}</h3>
               <div>{project.description}</div>
               <div className={s.detailLine}>
-                <span>{project.technologies.join(", ")}</span>
-                <span>
+                <div>{project.technologies.join(", ")}</div>
+                <div>
+                  <span className={s.projectDate}>
+                    {formatDate(project.date)}
+                  </span>
                   <a
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Githubリンク
+                    README へ
+                    <Image
+                      src="/icon_outer_link.svg"
+                      alt="outer_link"
+                      width={20}
+                      height={20}
+                    />
                   </a>
-                  <span className={s.projectDate}>
-                    {formatDate(project.date)}
-                  </span>
-                </span>
+                </div>
               </div>
             </td>
           </tr>

@@ -9,13 +9,10 @@
 
 .detailLine {
   display: flex;
+  justify-content: space-between;
   margin-top: 10px;
-
-  & > span {
-    width: 50%;
-  }
 }
 
 .projectDate {
-  float: right;
+  margin-right: 20px;
 }
