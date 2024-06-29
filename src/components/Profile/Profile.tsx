@@ -18,7 +18,7 @@ export const Profile: React.FC = () => {
           <div className={s.detail}>
             <div>
               <p>未経験・独学でSES企業に転職 3年目</p>
-              <p>転職を機に上京 関西弁が抜けません</p>
+              <p>github のアカウント名は kashmii です</p>
               <p></p>
             </div>
             <div className={s.language}>

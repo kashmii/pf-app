@@ -1,27 +1,19 @@
+import { GITHUB_URL, TWITTER_URL } from "@/utils/constants";
 import React from "react";
 import s from "./Footer.module.css";
 
 const Footer: React.FC = () => {
   return (
-    // TODO: add link of github n twitter
     <footer className={s.footer}>
       <div className={s.content}>
         <ul className={s.social}>
           <li>
-            <a
-              href="https://www.github.com/kashmii"
-              className="lsf facebook"
-              target="_blank"
-            >
+            <a href={GITHUB_URL} className="" target="_blank">
               github
             </a>
           </li>
           <li>
-            <a
-              href="https://x.com/miki_do_"
-              className="lsf github"
-              target="_blank"
-            >
+            <a href={TWITTER_URL} className="" target="_blank">
               Twitter
             </a>
           </li>
