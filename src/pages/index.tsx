@@ -14,7 +14,7 @@ const Home: React.FC = () => {
         <div className="tableContainer">
           <ProjectTable projects={showingProjects} />
           <div className="buttonContainer">
-            <Link href="/" className="projectButton">
+            <Link href="/projects" className="projectButton">
               もっと見る
             </Link>
           </div>

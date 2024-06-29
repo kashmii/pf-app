@@ -1,6 +1,6 @@
 import { Project } from "@/types/project";
 import { formatDate } from "@/utils/format";
-import { GITHUB_URL, TWITTER_URL } from "@/utils/constants";
+import { githubAccountUrl, twitterUrl } from "@/utils/constants";
 import Image from "next/image";
 import s from "./Profile.module.css";
 
@@ -25,7 +25,7 @@ export const Profile: React.FC = () => {
             </div>
             <p className={s.grayText}>github のアカウント名は kashmii です</p>
             <div className={s.snsIcons}>
-              <a href={GITHUB_URL} className={s.icon} target="_blank">
+              <a href={githubAccountUrl} className={s.icon} target="_blank">
                 <Image
                   src="/github-mark.svg"
                   alt="github"
@@ -33,7 +33,7 @@ export const Profile: React.FC = () => {
                   height={30}
                 />
               </a>
-              <a href={TWITTER_URL} className={s.icon} target="_blank">
+              <a href={twitterUrl} className={s.icon} target="_blank">
                 <Image
                   src="/x-logo-black.svg"
                   alt="twitter"
