@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
             </a>
           </li>
         </ul>
-        <p>&copy; {new Date().getFullYear()} Miki's Portfolio</p>
+        <p>&copy; {new Date().getFullYear()} Miki&apos;s Portfolio</p>
       </div>
     </footer>
   );
