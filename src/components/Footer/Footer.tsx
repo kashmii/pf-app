@@ -1,4 +1,5 @@
 import { GITHUB_URL, TWITTER_URL } from "@/utils/constants";
+import Image from "next/image";
 import React from "react";
 import s from "./Footer.module.css";
 
@@ -9,12 +10,22 @@ const Footer: React.FC = () => {
         <ul className={s.social}>
           <li>
             <a href={GITHUB_URL} className="" target="_blank">
-              github
+              <Image
+                src="/github-mark.svg"
+                alt="github"
+                width={30}
+                height={30}
+              />
             </a>
           </li>
           <li>
             <a href={TWITTER_URL} className="" target="_blank">
-              Twitter
+              <Image
+                src="/x-logo-black.svg"
+                alt="twitter"
+                width={30}
+                height={30}
+              />
             </a>
           </li>
         </ul>
