@@ -18,14 +18,14 @@ export const Profile: React.FC = () => {
           <div className={s.detail}>
             <div>
               <p>未経験・独学でSES企業に転職 3年目</p>
-              <p>github のアカウント名は kashmii です</p>
-              <p></p>
+              <p>今年中のの転職目指して学習中&#x1f4aa;</p>
             </div>
             <div className={s.language}>
               <p>経験言語: Ruby, React, TypeScript, Go</p>
             </div>
+            <p className={s.grayText}>github のアカウント名は kashmii です</p>
             <div className={s.snsIcons}>
-              <a href={GITHUB_URL} className={s.icon}>
+              <a href={GITHUB_URL} className={s.icon} target="_blank">
                 <Image
                   src="/github-mark.svg"
                   alt="github"
@@ -33,7 +33,7 @@ export const Profile: React.FC = () => {
                   height={30}
                 />
               </a>
-              <a href={TWITTER_URL} className={s.icon}>
+              <a href={TWITTER_URL} className={s.icon} target="_blank">
                 <Image
                   src="/x-logo-black.svg"
                   alt="twitter"

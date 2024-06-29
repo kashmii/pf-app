@@ -5,13 +5,10 @@ import s from "./ProjectTable.module.css";
 export const ProjectTable: React.FC<{ projects: Project[] }> = ({
   projects,
 }) => {
-  // TODO: project数が増えたらここを3にする
-  const showingProjects = projects.slice(0, 2);
-
   return (
     <table className={s.table}>
       <tbody>
-        {showingProjects.map((project, index) => (
+        {projects.map((project, index) => (
           <tr key={index}>
             <td className={s.td}>
               <h3>{project.name}</h3>
