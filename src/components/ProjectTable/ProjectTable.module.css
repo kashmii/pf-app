@@ -11,8 +11,18 @@
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .projectDate {
   margin-right: 20px;
+}
+
+.containerDateGithub {
+  @media screen and (max-width: 768px) {
+    margin-top: 10px;
+  }
 }

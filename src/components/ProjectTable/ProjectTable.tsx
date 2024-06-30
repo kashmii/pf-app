@@ -16,7 +16,7 @@ export const ProjectTable: React.FC<{ projects: Project[] }> = ({
               <div>{project.description}</div>
               <div className={s.detailLine}>
                 <div>{project.technologies.join(", ")}</div>
-                <div>
+                <div className={s.containerDateGithub}>
                   <span className={s.projectDate}>
                     {formatDate(project.date)}
                   </span>
