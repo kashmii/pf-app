@@ -15,6 +15,11 @@
   & > img {
     border-radius: 50%;
     border: 2px solid #ccc;
+
+    @media screen and (max-width: 768px) {
+      width: 100px;
+      height: 100px;
+    }
   }
 }
 
@@ -23,16 +28,24 @@
 
   & > h3 {
     margin-left: 20px;
-  }
-}
 
-.detail {
-  text-align: center;
+    @media screen and (max-width: 768px) {
+      margin-left: 0;
+    }
+  }
 }
 
 .language {
   margin-top: 30px;
+}
+
+.detail,
+.language {
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    text-align: left;
+  }
 }
 
 .snsIcons {
